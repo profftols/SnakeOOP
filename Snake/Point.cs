@@ -38,6 +38,11 @@ namespace Snake
             Console.Write(sym);
         }
 
+        public bool IsHit(Point p)
+        {
+            return p.x == x && p.y == y;
+        }
+
         public void Clear()
         {
             sym = ' ';
